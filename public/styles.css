@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  /* background: linear-gradient(to right, #a1d3b0, #f6f1d3); */
+}
+
+navbar {
+  padding: 20px;
+}
+.navlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navitem {
+  margin-right: 2rem;
+}
+.navitem:first-child {
+  margin-right: auto;
+}
+
+form {
+  margin-bottom: 70px;
+}
+
+.form-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-li {
+  margin-right: 2rem;
+}
+
+.form-btn {
+  background: #648880;
+  color: white;
+  padding: 15px;
+  width: 150px;
+  border-radius: 9px;
+  border: none;
+}
+
+
+input {
+  width: 450px;
+  padding: 15px;
+  border-radius: 9px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.job-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-card {
+  border: 1px solid #648880;
+  border-radius: 10px;
+  width: 80vw;
+  padding: 40px;
+  margin-bottom: 9px;
+}
+
+.job-card-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.btn-more {
+  width: 80px;
+  padding: 10px;
+  color: white;
+  background: #648880;
+  border: none;
+  border-radius: 9px;
+}
+
+.btn {
+  
+}
