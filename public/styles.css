@@ -26,7 +26,7 @@ navbar {
   color: black;
 }
 
-form {
+.home-form {
   margin-bottom: 70px;
 }
 
@@ -54,7 +54,7 @@ form {
 }
 
 
-input {
+.input {
   width: 450px;
   padding: 15px;
   border: 1px solid black;
@@ -102,3 +102,37 @@ Jobs Display
   
 } */
 
+.posts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-form {
+  display: flex;
+  justify-items:center;
+  align-items: center;
+}
+
+.posts-ul {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  margin-bottom: 20px
+}
+
+label {
+  display: block;
+  
+}
+
+.posts-input {
+  width: 180px;
+  padding: 5px;
+  border-radius: 9px;
+}
+
+.posts-btn {
+  width: 150px;
+  padding: 7px;
+  margin-top: 5px;
+}
