@@ -16,9 +16,14 @@ navbar {
 
 .navitem {
   margin-right: 2rem;
+  
 }
 .navitem:first-child {
   margin-right: auto;
+}
+.navitem a {
+  text-decoration: none;
+  color: black;
 }
 
 form {
@@ -35,19 +40,24 @@ form {
   margin-right: 2rem;
 }
 
-.form-btn {
-  background: #648880;
+.btn {
   color: white;
+  background: #648880;
+  border: none;
+  border-radius: 9px;
+
+}
+
+.form-btn {
   padding: 15px;
   width: 150px;
-  border-radius: 9px;
-  border: none;
 }
 
 
 input {
   width: 450px;
   padding: 15px;
+  border: 1px solid black;
   border-radius: 9px;
 }
 
@@ -79,12 +89,16 @@ li {
 .btn-more {
   width: 80px;
   padding: 10px;
-  color: white;
-  background: #648880;
-  border: none;
-  border-radius: 9px;
-}
-
-.btn {
   
 }
+
+/*
+==============
+Jobs Display
+==============
+*/
+
+/* .jobs-display {
+  
+} */
+

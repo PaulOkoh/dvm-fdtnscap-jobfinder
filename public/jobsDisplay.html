@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
-    <title>jobsFinder</title>
+    <title>All Jobs</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>JobsFinder</li>
-        <li>Find Jobs</li>
-        <li>Sign In</li>
-        <li>Employer Log In</li>
+    <navbar>
+      <ul class="navlist">
+        <li class="navitem">JobsFinder</li>
+        <li class="navitem"><a href="jobsDisplay.html">Find Jobs</a></li>
+        <li class="navitem"><a href="">Sign In</a></li>
+        <li class="navitem"><a href="postJobs.html">Employer Log In</a></li>
       </ul>
-    </nav>
-    <form action="">
-      <ul>
-        <li><input type="text" /></li>
-        <li><input type="text" /></li>
-        <li><button>Search</button></li>
-      </ul>
-      <input type="text" />
-    </form>
+    </navbar>
+    <main class="job-card-container">
+
+      <h2>Explore All Jobs</h2>
+
+      <section id="display"></section>
+
+
+      
+
+    </main>
+
     <button id="btn">Test Button</button>
+    
+
+    
     <script src="../node_modules/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
+    <script src="display.js"></script>
   </body>
 </html>

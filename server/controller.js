@@ -15,7 +15,7 @@ module.exports  = {
   getAllJobs: (req, res) => {
     sequelize.query(`select * from jobs`)
     .then(dbRes => {
-      res.status(200).send(dbRes)
+      res.status(200).send(dbRes[0])
     })
     .catch(err => console.log(err))
   }
