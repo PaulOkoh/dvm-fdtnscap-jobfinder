@@ -2,7 +2,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  /* background: linear-gradient(to right, #a1d3b0, #f6f1d3); */
+  
 }
 
 navbar {
@@ -125,7 +125,8 @@ label {
   
 }
 
-.posts-input {
+.posts-input,
+.updates-input {
   width: 180px;
   padding: 5px;
   border-radius: 9px;
@@ -135,4 +136,8 @@ label {
   width: 150px;
   padding: 7px;
   margin-top: 5px;
+}
+
+@media(max-width: 768px) {
+  
 }

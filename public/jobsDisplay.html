@@ -10,10 +10,10 @@
   <body>
     <navbar>
       <ul class="navlist">
-        <li class="navitem"><a href="index.html">JobsFinder</a></li>
+        <li class="navitem"><a href="index.html">Home</a></li>
         <li class="navitem" id="findJobs"><a href="jobsDisplay.html">Find Jobs</a></li>
         <li class="navitem"><a href="">Sign In</a></li>
-        <li class="navitem"><a href="postJobs.html">Employer Log In</a></li>
+        <li class="navitem"><a href="postJobs.html">Admin Log In</a></li>
       </ul>
     </navbar>
     <main class="job-card-container">
@@ -21,6 +21,35 @@
       <h2>Explore All Jobs</h2>
 
       <section id="display"></section>
+
+      <section id="update">
+        <!-- <main class="posts-container">
+          <h2>Update Job</h2>
+          <form action="submit" class="updates-form">
+            <ul class="posts-ul">
+              <li>
+                <label for="title">Title</label>
+                <input type="text" class="updates-input" id="update-title" />
+              </li>
+              <li>
+                <label for="company">Company</label>
+                <input type="text" class="updates-input" id="update-company" />
+              </li>
+              <li>
+                <label for="location">Location</label>
+                <input type="text" class="updates-input" id="update-location" />
+              </li>
+              <li>
+                <label for="zipcode">zipcode</label>
+                <input type="text" class="updates-input" id="update-zipcode" />
+              </li>
+              <li><button type="submit" class="btn posts-btn" id="updateBtn">Update Job</button></li>
+            </ul>
+          </form>
+        </main> 
+      </section>
+
+
 
 
       
@@ -33,5 +62,6 @@
     
     <script src="../node_modules/axios/dist/axios.min.js"></script>
     <script src="display.js"></script>
+    <!-- <script src="update.js"></script> -->
   </body>
 </html>
