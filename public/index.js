@@ -45,3 +45,7 @@ searchBtn.addEventListener('click', (e) => {
   searchJobs()
   findTitle.value = ''
 })
+
+
+
+
