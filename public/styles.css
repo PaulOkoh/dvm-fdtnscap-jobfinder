@@ -6,10 +6,17 @@
 
 body {
   margin: 0 auto;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-span {
+
+
+
+.logo-span {
   color: white;
+  margin-left: 8px;
+  font-weight: 900;
 }
 
 .nav {
@@ -20,6 +27,8 @@ span {
 
 .navlist {
   display:flex;
+  justify-items: end;
+  align-items: flex-end;
 }
 
 .navitem {
@@ -64,8 +73,13 @@ span {
 .input {
   width: 28rem;
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid #648880;
   border-radius: 9px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid rgb(41, 72, 56);
 }
 
 li {
@@ -98,15 +112,6 @@ li {
   padding: 10px;
 }
 
-/*
-==============
-Jobs Display
-==============
-*/
-
-/* .jobs-display {
-  
-} */
 
 .posts-container {
   display: flex;
@@ -138,7 +143,7 @@ label {
   padding: 10px;
   border-radius: 9px;
   margin-bottom: 15px;
-  border: 1px solid black;
+  border: 1px solid #648880;
   
 }
 
