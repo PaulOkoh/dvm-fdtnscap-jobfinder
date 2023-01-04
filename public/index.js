@@ -10,7 +10,6 @@ function clearResultsPage() {
   jobsResult.innerHTML = ''
 }
 
-
 function createSearchCard(job) {
   const searchCard =
    `<div class="job-card">

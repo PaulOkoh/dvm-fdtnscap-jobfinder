@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>jobsFinder</title>
   </head>
   <body>
-    <navbar>
-      <ul class="navlist">
-        <li class="navitem"><a href="index.html">Home</a></li>
-        <li class="navitem"><a href="jobsDisplay.html">Find Jobs</a></li>
-        <li class="navitem"><a href="#">Sign In</a></li>
-        <li class="navitem"><a href="postJobs.html">Admin Log In</a></li>
-      </ul>
-    </navbar>
-
+      <nav class="nav">
+        <span><i class="fa-solid fa-business-time fa-3x"></i><span>jobFinder</span></span>
+        <ul class="navlist">
+          <li class="navitem"><a href="index.html">Home</a></li>
+          <li class="navitem"><a href="jobsDisplay.html">Find Jobs</a></li>
+          <li class="navitem"><a href="">Sign In</a></li>
+          <li class="navitem"><a href="postJobs.html">Admin Log In</a></li>
+        </ul>
+      </nav>
     
-     <form action="submit" class="home-form">
+     <form  action="submit" class="home-form">
       <ul class="form-ul">
         <li class="form-li"><input type="text" id="findTitle"  class="input" placeholder="Title" /></li>
         <li class="form-li"><input type="text" id="findLocation"  class="input" placeholder="Location" /></li>
@@ -26,35 +27,24 @@
       </ul>
     </form>
     <main class="job-card-container">
+      <section id="display">
+        <div class="job-card">
+          <h2>Cloud Architect</h2>
+          <h3>Yum Brands</h3>
+          <h4>Dallas, TX</h4>
+          <h3>Description</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugit maxime blanditiis quisquam praesentium, consequuntur accusamus obcaecati? Explicabo delectus itaque possimus tempore eaque deleniti dolor id. Magni dicta similique corporis.
+            Beatae enim mollitia dolorem architecto labore, harum at ea ex autem officia perferendis doloribus minus consequatur voluptatem ipsa! Cumque ipsum repellendus animi atque eius dolore, ad error id facilis necessitatibus.
+            .</p>
+          <button class="btn btn-more">More</button>
+          <button class="btn btn-more">Apply</button>
 
     <section id="display"></section>
 
     </main>
-    <!-- <main class="job-card-container">
-      <section class="job-card">
-        <h2 contenteditable="true">Salesforce Cloud Platform Architect</h2>
-        <h3>Sally Beauty Holidng</h3>
-        <h4>Denton, TX 75216</h4>
-        <button class="btn btn-more">More</button>
-        <button class="btn btn-more">Apply</button>
-      </section>
-      <section class="job-card">
-        <h2>Salesforce Cloud Platform Architect</h2>
-        <h3>Sally Beauty Holidng</h3>
-        <h4>Denton, TX 75216</h4>
-        <button class="btn btn-more">More</button>
-        <button class="btn btn-more">Apply</button>
-      </section>
-      <section class="job-card">
-        <h2>Salesforce Cloud Platform Architect</h2>
-        <h3>Sally Beauty Holidng</h3>
-        <h4>Denton, TX 75216</h4>
-        <button class="btn btn-more">More</button>
-        <button class="btn btn-more">Apply</button>
-      </section>
+   
 
 
-    </main> --> 
     <!-- <button id="btn">Test Button</button> -->
     <script src="../node_modules/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>

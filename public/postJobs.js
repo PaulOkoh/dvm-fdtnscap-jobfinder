@@ -5,8 +5,6 @@ const jobLocation = document.querySelector('#location')
 const jobZipcode = document.querySelector('#zipcode')
 const postsBtn = document.querySelector('#postsBtn')
 
-//const baseURL = `http://localhost:4004`
-
 
 function postJob() {
   let body = {

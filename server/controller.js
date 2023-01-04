@@ -25,14 +25,12 @@ module.exports  = {
   },
 
   postNewJob: (req, res) => {
-    
     let {
       title,
       company,
       location,
       zipcode
     } = req.body
-
 
     sequelize.query(`insert into jobs(job_title, job_company, job_location, job_zipcode)
     values ('${title}', '${company}', '${location}', '${zipcode}')`)
@@ -61,6 +59,7 @@ module.exports  = {
   },
 
   updateJob: (req, res) => {
+    console.log(req.body);
     let {
       title,
       company,
@@ -70,7 +69,7 @@ module.exports  = {
     let { Id } = req.params
     sequelize.query(`
     update jobs set 
-    job_title = '${title}'
+    job_title = '${title}',
     job_company ='${company}',
     job_location = '${location}',
     job_zipcode = '${zipcode}'

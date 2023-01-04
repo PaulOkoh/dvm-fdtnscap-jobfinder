@@ -5,15 +5,6 @@ const updateLocation = document.querySelector('#update-location')
 const updateZipcode = document.querySelector('#update-zipcode')
 const updateBtn = document.querySelector('#updateBtn')
 
-//const baseURL = `http://localhost:4004`
-
-
-
-
-
-
-
-
 
 function getJob() {
   axios.get(`http://localhost:4004/jobs/${id}`)
@@ -37,6 +28,7 @@ function getJob() {
 
 
 function updateJob() {
+  getJob()
   let body = {
     title: updateTitle.value,
     company: updateCompany.value,
@@ -45,8 +37,7 @@ function updateJob() {
   }
 
   axios.put(`http://localhost:4004/jobs/${id}`, body)
-  //.then(res => console.log(res))
-  .then(res => res.render)
+  .then(res => console.log(res))
   .catch(err => console.log(err))
 }
 
@@ -58,6 +49,7 @@ function updateJob() {
 updateBtn.addEventListener('click', (e) => {
   e.preventDefault()
   updateJob()
+  
 //  jobTitle.value = ''
 //  jobCompany.value = ''
 //  jobLocation.value = ''

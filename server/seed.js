@@ -64,7 +64,7 @@ module.exports = {
 ('Product Test Technician(DMOS 6)', 'Test Instruments', 'Dallas, TX',75243),
 ('Ride Operator', 'Six Flags Over Texas', 'Arlington, TX', 76011),
 ('Park President', 'Six Flags Entertainment', 'Arlington, TX', 76011),
-('Line Attendatn - Ride Operations', 'Six Flags Over Texas', 'Arlington, TX', 76011),
+('Line Attendant - Ride Operations', 'Six Flags Over Texas', 'Arlington, TX', 76011),
 ('Admissions Team Member', 'Six Flags Over Texas', 'Arlington, TX', 76011),
 ('VP, Human Resources', 'Six Flags Entertainment', 'Arlington, TX', 76011),
 ('PMO Manager', 'Six Flags, Inc', 'Arlington, TX', 76011),

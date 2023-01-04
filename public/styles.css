@@ -2,28 +2,36 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  
 }
 
-navbar {
-  padding: 20px;
+body {
+  margin: 0 auto;
 }
+
+span {
+  color: white;
+}
+
+.nav {
+  background: #648880;
+  padding: 15px;
+  margin-bottom: 60px;
+}
+
 .navlist {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display:flex;
 }
 
 .navitem {
   margin-right: 2rem;
-  
+  justify-content: end;
 }
 .navitem:first-child {
   margin-right: auto;
 }
 .navitem a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .home-form {
@@ -34,6 +42,7 @@ navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .form-li {
@@ -45,7 +54,6 @@ navbar {
   background: #648880;
   border: none;
   border-radius: 9px;
-
 }
 
 .form-btn {
@@ -53,9 +61,8 @@ navbar {
   width: 150px;
 }
 
-
 .input {
-  width: 450px;
+  width: 28rem;
   padding: 15px;
   border: 1px solid black;
   border-radius: 9px;
@@ -89,7 +96,6 @@ li {
 .btn-more {
   width: 80px;
   padding: 10px;
-  
 }
 
 /*
@@ -109,35 +115,73 @@ Jobs Display
 
 .posts-form {
   display: flex;
-  justify-items:center;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
 }
 
 .posts-ul {
   display: flex;
   flex-direction: column;
-  padding: 7px;
-  margin-bottom: 20px
+  padding: 60px;
+  border: 1px solid #648880;
+  border-radius: 9px;
 }
 
 label {
   display: block;
-  
 }
 
 .posts-input,
 .updates-input {
-  width: 180px;
-  padding: 5px;
+  width: 25rem;
+  padding: 10px;
   border-radius: 9px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  
 }
 
 .posts-btn {
-  width: 150px;
-  padding: 7px;
   margin-top: 5px;
+  width: 25rem;
+  align-self: flex-end;
 }
 
-@media(max-width: 768px) {
+
+
+
+@media (max-width: 1060px) {
+  .input {
+    max-width: 350px;
+    margin-bottom: 8px;
+    
+  }
+  
   
 }
+
+@media (max-width: 960px) {
+  .input {
+    max-width: 300px;
+    margin-bottom: 8px;
+    
+  }
+  
+  
+}
+
+
+@media (max-width: 768px) {
+  .input {
+    max-width: 400px;
+    margin-bottom: 8px;
+    
+  }
+  .form-ul {
+    flex-direction: column;
+  }
+  
+}
+
+
