@@ -55,3 +55,10 @@
 ('Inventory Specialist', 'Six Flags Entertainment', 'Arlington, TX', 76011)
 ('Business Analyst', 'Six Flags, Inc', 'Arlington, TX', 76011)
 
+
+
+<button class="btn btn-more"
+  onclick="getUpdatePage(${job["job_id"]})">Update</button>
+
+  <button class="btn btn-more">More</button>
+  <button class="btn btn-more">Apply</button>

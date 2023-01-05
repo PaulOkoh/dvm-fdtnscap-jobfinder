@@ -4,7 +4,7 @@ const app = express()
 const cors = require('cors')
 const {SERVER_PORT} = process.env
 const {seed} = require('./seed.js')
-const {getAllJobs, postNewJob, deleteJob, getJob, searchJobs, updateJob} = require('./controller.js')
+const {getAllJobs, postNewJob, deleteJob, getJob, searchJobs} = require('./controller.js')
 
 
 app.use(express.json())
@@ -18,8 +18,6 @@ app.get('/jobs', getAllJobs)
 app.get('/jobs/:id', getJob)
 
 app.post('/jobs', postNewJob)
-
-app.put('/jobs/:id', updateJob)
 
 app.delete('/jobs/:id', deleteJob)
 

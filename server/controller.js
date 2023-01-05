@@ -2,6 +2,11 @@ require('dotenv').config()
 const Sequelize = require('sequelize')
 const {DATABASE_LINK} = process.env
 
+const jwt = require('jsonwebtoken')
+const {SECRET} = process.env
+
+
+
 const sequelize = new Sequelize(DATABASE_LINK, {
   dialect: 'postgres',
   dialectOptions: {
@@ -86,6 +91,31 @@ module.exports  = {
       res.status(200).send(dbRes[0])
     })
     .catch(err => console.log(err))
+  },
+
+  isAuthenticated: (req, res, next) => {
+    console.log(req.headers)
+    const headerToken = req.headers.authorization
+    if(!headerToken) {
+      console.log('error in controller/auth')
+      res.sendStatus(401)
+    }
+
+    let token
+
+    try {
+       token = jwt.verify(headerToken, SECRET)
+    }catch (err) {
+      err.statusCode = 500
+      throw err
+    }
+    if(!token) {
+      const error = new Errror('Authentication failed.')
+      error.statusCode = 401
+      throw error
+    }
+
+    next()
   }
 }
 

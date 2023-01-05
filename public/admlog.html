@@ -16,7 +16,7 @@
       href="http://fonts.googleapis.com/css?family=Lato:100,300,400"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Update job | jobsFinder</title>
+    <title>Admin login | jobFinder</title>
   </head>
   <body>
     <nav class="nav">
@@ -28,39 +28,36 @@
           >
         </li>
         <li class="navitem"><a href="jobsDisplay.html">All Jobs</a></li>
-        <li class="navitem"><a href="login.html">Sign In</a></li>
-        <li class="navitem"><a href="admlog.html.html">Admin Log In</a></li>
+        <li class="navitem">
+          <a href="login.html">Sign In</a>
+        </li>
+        <li class="navitem"><a href="admlog.html" class="active-page">Admin Log In</a></li>
       </ul>
     </nav>
+
     <main class="posts-container">
-      <h2>Update Job</h2>
-      <form action="submit" class="updates-form">
+      <form action="submit" class="posts-form">
+          <h3>Admin login</h3>
         <ul class="posts-ul">
           <li>
-            <label for="title">Title</label>
-            <input type="text" class="updates-input" id="update-title" />
+            <label for="email">Email Address</label>
+            <input type="text" class="posts-input" id="email-adm" />
           </li>
           <li>
-            <label for="company">Company</label>
-            <input type="text" class="updates-input" id="update-company" />
+            <label for="password">Password</label>
+            <input type="password" class="posts-input" id="password-adm" />
           </li>
+
           <li>
-            <label for="location">Location</label>
-            <input type="text" class="updates-input" id="update-location" />
-          </li>
-          <li>
-            <label for="zipcode">Zip Code</label>
-            <input type="text" class="updates-input" id="update-zipcode" />
-          </li>
-          <li>
-            <button type="submit" class="btn posts-btn form-btn" id="updateBtn">
-              Update Job
+            <button type="submit" class="btn posts-btn form-btn" id="admSigninBtn">
+              Sign in
             </button>
           </li>
         </ul>
       </form>
     </main>
     <script src="../node_modules/axios/dist/axios.min.js"></script>
-    <script src="update.js"></script>
+    <script src="postJobs.js"></script>
+    <script src="admlog.js"></script>
   </body>
 </html>

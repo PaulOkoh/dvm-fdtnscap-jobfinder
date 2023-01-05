@@ -14,7 +14,6 @@ function createSearchCard(job) {
   <h2>${job["job_title"]}</h2>
   <h3>${job["job_company"]}</h3>
   <h4>${job["job_location"]}  ${job["job_zipcode"]}</h4>
-  <button class="btn btn-more">More</button>
   <button class="btn btn-more">Apply</button>
   
 </div>`;
