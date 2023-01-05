@@ -49,6 +49,6 @@ function deleteJob(id) {
 getAllJobs();
 
 function getUpdatePage(id) {
-  location.href = "update.html/";
+  location.href = "update.html";
   console.log(id);
 }

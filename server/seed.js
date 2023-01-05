@@ -15,6 +15,11 @@ module.exports = {
   seed: (req, res) => {
       sequelize.query(`
       drop table if exists jobs;
+      drop table if exists users;
+
+      create table users(user_id serial primary key,
+        email varchar not null,
+        passhash varchar(500) not null);
 
       create table jobs(job_id serial primary key, job_title varchar(100), job_company varchar(100), job_location varchar(100), job_zipcode varchar(5));
 
