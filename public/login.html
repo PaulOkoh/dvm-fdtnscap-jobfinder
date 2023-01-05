@@ -4,43 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-    href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-    <link rel="stylesheet" href="styles.css">
-    <title>jobsFinder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Lato:100,300,400"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign in | jobFinder</title>
   </head>
   <body>
-      <nav class="nav">
-        <ul class="navlist">
-          <li class="navitem"><a href="index.html"><i class="fa-solid fa-business-time fa-3x"></i><span class="logo-span">jobFinder</span></a></li>
-          <li class="navitem"><a href="jobsDisplay.html">All Jobs</a></li>
-          <li class="navitem"><a href="">Sign In</a></li>
-          <li class="navitem"><a href="postJobs.html">Admin Log In</a></li>
-        </ul>
-      </nav>
-      
+    <nav class="nav">
+      <ul class="navlist">
+        <li class="navitem">
+          <a href="index.html"
+            ><i class="fa-solid fa-business-time fa-3x"></i
+            ><span class="logo-span">jobFinder</span></a
+          >
+        </li>
+        <li class="navitem"><a href="jobsDisplay.html">All Jobs</a></li>
+        <li class="navitem">
+          <a href="login.html" class="active-page">Sign In</a>
+        </li>
+        <li class="navitem"><a href="postJobs.html">Admin Log In</a></li>
+      </ul>
+    </nav>
+
     <main class="posts-container">
-      
       <form action="submit" class="posts-form">
         <ul class="posts-ul">
           <li>
-            <label for="title">Title</label>
+            <label for="email">Email Address</label>
             <input type="text" class="posts-input" id="title" />
           </li>
           <li>
-            <label for="company">Company</label>
+            <label for="password">Password</label>
             <input type="text" class="posts-input" id="company" />
           </li>
+
           <li>
-            <label for="location">Location</label>
-            <input type="text" class="posts-input" id="location" />
+            <button type="submit" class="btn posts-btn form-btn" id="postsBtn">
+              Sign in
+            </button>
           </li>
-          <li>
-            <label for="Zipcode">zipcode</label>
-            <input type="text" class="posts-input" id="zipcode" />
-          </li>
-          <li><button type="submit" class="btn posts-btn form-btn" id="postsBtn">Post Job</button></li>
         </ul>
       </form>
     </main>

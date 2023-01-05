@@ -7,11 +7,9 @@
 body {
   margin: 0 auto;
   color: #888;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
-
-
-
 
 .logo-span {
   color: white;
@@ -26,7 +24,7 @@ body {
 }
 
 .navlist {
-  display:flex;
+  display: flex;
   justify-items: end;
   align-items: flex-end;
 }
@@ -41,6 +39,10 @@ body {
 .navitem a {
   text-decoration: none;
   color: white;
+}
+
+a.active-page {
+  font-weight: 900;
 }
 
 .home-form {
@@ -112,7 +114,6 @@ li {
   padding: 10px;
 }
 
-
 .posts-container {
   display: flex;
   flex-direction: column;
@@ -144,7 +145,6 @@ label {
   border-radius: 9px;
   margin-bottom: 15px;
   border: 1px solid #648880;
-  
 }
 
 .posts-btn {
@@ -153,40 +153,26 @@ label {
   align-self: flex-end;
 }
 
-
-
-
 @media (max-width: 1060px) {
   .input {
     max-width: 350px;
     margin-bottom: 8px;
-    
   }
-  
-  
 }
 
 @media (max-width: 960px) {
   .input {
     max-width: 300px;
     margin-bottom: 8px;
-    
   }
-  
-  
 }
-
 
 @media (max-width: 768px) {
   .input {
     max-width: 400px;
     margin-bottom: 8px;
-    
   }
   .form-ul {
     flex-direction: column;
   }
-  
 }
-
-
