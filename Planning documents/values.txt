@@ -62,3 +62,6 @@
 
   <button class="btn btn-more">More</button>
   <button class="btn btn-more">Apply</button>
+
+  const jwt = require('jsonwebtoken')
+const {SECRET} = process.env
